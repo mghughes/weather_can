@@ -65,7 +65,8 @@ def get_forecast_by_coordinates(
     province_code = nearest_site['properties']['Province Codes']
     forecast = get_forecast_by_site_code(
         site_code=site_code,
-        province_code=province_code
+        province_code=province_code,
+        language=language
     )
     return forecast
 
@@ -94,6 +95,7 @@ def get_forecast_by_place_name(name: str, language: str = "en") -> str:
     province_code = nearest_site['properties']['Province Codes']
     forecast = get_forecast_by_site_code(
         site_code=site_code,
-        province_code=province_code
+        province_code=province_code,
+        language=language
     )
     return forecast
