@@ -1,0 +1,5 @@
+geocoder
+fiona
+numpy
+requests
+scipy
